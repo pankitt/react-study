@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+$border: 1px solid #ccc;
+.container {
+  border: $border;
+  width: 600px;
+  padding: 0 15px;
+  margin: 0 auto;
+  .inner {
+    border-top: $border;
+    padding: 5px 0;
+  }
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.orange {
+  background: orange
+}
+.blue {
+  color: #fff;
+  background: blue
+}
+.green {
+  background: green;
+}
+.red {
+  background: red;
+}
+
+
+
+.UserInfo {
+  float: left;
+  margin-right: 15px;
+}
+label {
+  display: block;
+}
+
+.message {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  margin: 10px 0;
+  &_success {
+    border-color: green;
+  }
+  &_failure {
+    border-color: red;
+  }
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  > div {
+    margin-right: 100px;
+  }
+}
